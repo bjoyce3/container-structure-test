@@ -1,5 +1,26 @@
 Container Structure Tests
 ====================
+## Overview
+
+This repository was forked from GoogleContainerTools/container-structure-test to extend the framework to work with Singularity. 
+
+### Files that were modified:
+1) package/drivers/driver.go
+   - modified the constant variables for the framework can find the singularity driver
+   - one line change
+
+### Files Added:
+1) package/drivers/singularity.go
+   - Used go library for Singularity to fill out
+   - Structure was created to implement the defined driver interface
+   
+### Results
+- Tests can be run on Singularity containers using the Google framework
+
+### Example commands
+
+
+====================
 
 The Container Structure Tests provide a powerful framework to validate the structure
 of a container image. These tests can be used to check the output of commands
